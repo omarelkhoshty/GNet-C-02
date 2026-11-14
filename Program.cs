@@ -125,16 +125,37 @@ namespace C__Coding
 
     #region Question 7
     //Q07.  Given string pagesText = "464";, convert it into an int using the Convert class.
-    internal class Program
+    //internal class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        string pagesText = "464";
+    //        int pagesInt = Convert.ToInt32(pagesText);
+    //        Console.WriteLine(pagesInt);
+    //    }
+    //}
+    #endregion
+
+    #region Question 8
+    //Q08.Given string yearText = "2023";, convert it using int.Parse(). Then given string badText = "abc";, use int.TryParse() to safely try converting it, and print "Invalid number" if it fails.
+    internal class program
     {
         static void Main(string[] args)
         {
-            string pagesText = "464";
-            int pagesInt = Convert.ToInt32(pagesText);
-            Console.WriteLine(pagesInt);
+            string yearText = "2023";
+            int year = int.Parse(yearText);
+            Console.WriteLine(year);
+
+            string badText = "abc";
+            if (int.TryParse(badText, out int badNumber)) // i don't know what is out parameter but i think it is used to return a value from the method , code didn't work without it so i added it and it worked 
+            {
+                Console.WriteLine(badNumber);
+            }
+            else
+            {
+                Console.WriteLine("Invalid number");
+            }
         }
     }
     #endregion
 }
-
-
