@@ -74,27 +74,40 @@ namespace C__Coding
 
     #region Question 4
     //Q04.Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by zero", and then prints "Done" in a finally block.
-    internal class  program
+    //internal class  program
+    //{
+    //   static void Main(string[] args)
+    //    {
+    //        int num01 = 10;
+    //        int num02 = 0;
+    //        try
+    //        {
+    //            int result = num01 / num02;
+    //        }
+    //        catch (DivideByZeroException)
+    //        {
+    //            Console.WriteLine("Cannot divide by zero");
+    //        }
+    //        finally
+    //        {
+    //            Console.WriteLine("Done");
+    //        }
+    //    }
+    //}
+
+    #endregion
+
+    #region Question 5
+    //Q05.  Declare an int pages = 300; then store it in a double variable without using a cast.
+    internal class Program
     {
-       static void Main(string[] args)
+        static void Main(string[] args)
         {
-            int num01 = 10;
-            int num02 = 0;
-            try
-            {
-                int result = num01 / num02;
-            }
-            catch (DivideByZeroException)
-            {
-                Console.WriteLine("Cannot divide by zero");
-            }
-            finally
-            {
-                Console.WriteLine("Done");
-            }
+            int pages = 300;
+            double pagesDouble = pages;
+            Console.WriteLine(pagesDouble);
         }
     }
-
     #endregion
 }
 
