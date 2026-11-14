@@ -1,8 +1,11 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace C__Coding
 {
     #region Question 1
+    //Q01.  Create a Book class with a Title (string) and Pages (int). Create a Book object and store it in variable of type object. Print it.
+
     class Book
     {
         public string Title { get; set; }
