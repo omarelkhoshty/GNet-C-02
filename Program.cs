@@ -175,15 +175,30 @@ namespace C__Coding
 
     #region Question 10
     //Q10.  Declare int copies = 100;. Box it into an object variable, then unbox it back into a new variable, and print both.
+    //internal class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        int copies = 100;
+    //        object copiesObject = copies;
+    //        int copiesUnboxed = (int)copiesObject;
+    //        Console.WriteLine(copies);
+    //        Console.WriteLine(copiesUnboxed);
+    //    }
+    //}
+    #endregion
+
+    #region Question 11
+
+    //Q11.  Declare an int? year = null;. Print whether it has a value, then assign it 2023 and print its value.
     internal class Program
     {
         static void Main(string[] args)
         {
-            int copies = 100;
-            object copiesObject = copies;
-            int copiesUnboxed = (int)copiesObject;
-            Console.WriteLine(copies);
-            Console.WriteLine(copiesUnboxed);
+            int? year = null;
+            Console.WriteLine($"Has value: {year.HasValue}");
+            year = 2023;
+            Console.WriteLine($"Value: {year.Value}");
         }
     }
     #endregion
