@@ -112,13 +112,26 @@ namespace C__Coding
 
     #region Question 6
     //Q06.  Declare a double price = 49.99; then convert it into an int using a cast.
+    //internal class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        double price = 49.99;
+    //        int priceInt = (int)price;
+    //        Console.WriteLine(priceInt);
+    //    }
+    //}
+    #endregion
+
+    #region Question 7
+    //Q07.  Given string pagesText = "464";, convert it into an int using the Convert class.
     internal class Program
     {
         static void Main(string[] args)
         {
-            double price = 49.99;
-            int priceInt = (int)price;
-            Console.WriteLine(priceInt);
+            string pagesText = "464";
+            int pagesInt = Convert.ToInt32(pagesText);
+            Console.WriteLine(pagesInt);
         }
     }
     #endregion
