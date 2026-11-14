@@ -64,10 +64,10 @@ namespace C__Coding
     //}
     #endregion
 
-    #region Question 2
+    #region Question 3
     //Q03.Look at the line below.Is it a compile - time error, a runtime error, or a logical error? Fix it. int pages = "464";
      
-    int pages = 464;
+    int pages = 464; /// i solved it by removing the quotes from 464 and making it an integer instead of a string ///
 
     #endregion
 
