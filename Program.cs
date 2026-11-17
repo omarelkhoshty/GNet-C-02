@@ -205,14 +205,18 @@ namespace C__Coding
 
     #region Question 12
     //Q12.  Declare a string? reviewer = null;. Print whether it is null.
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            string? reviewer = null;
-            Console.WriteLine($"Is null: {reviewer == null}");
-        }
-    }
+    //internal class Program
+    //{
+    //    static void Main(string[] args)
+    //    {
+    //        string? reviewer = null;
+    //        Console.WriteLine($"Is null: {reviewer == null}");
+    //    }
+    //}
 
     #endregion
+
+    // i dont understand question 13 , 14 and 15 .
+
+
 }
